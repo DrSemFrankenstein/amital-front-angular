@@ -1,0 +1,7 @@
+<div *ngFor="let task of tasks" class="task-box">
+    <div><strong>Subject:</strong> {{ task.subject }}</div>
+    <div><strong>User Name:</strong> {{ task.userName }}</div>
+    <div><strong>Target Date:</strong> {{ task.targetDate | date }}</div>
+    <div><strong>Completed:</strong> {{ task.isCompleted ? "Yes" : "No" }}</div>
+  </div>
+  
